@@ -1,7 +1,5 @@
 import numpy as np
 
-
-
 def stats (stock) :
     if not stock:  # Vérifier si le stock est vide
         print("⚠️ Le stock est vide.")
@@ -20,15 +18,10 @@ def stats (stock) :
     Max_Price = np.max(Unit_Price)
      
     
-    
-    # l'indice du prix maximum
-    
     # Produits le plus cher
     produit_plus_cher = product[np.argmax(Unit_Price)]
     
-    
     # Produits le moins cher
-    
     produit_moins_cher = product[np.argmin(Unit_Price)]
     
 
