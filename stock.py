@@ -1,7 +1,7 @@
 stock = []
 
 def ajt_prd():
-    prd = input("Entrer votre produit sous forme (Produit,Quantite,Prix) : ")
+    prd = input("Entrer votre produit sous frome (Produit,Quantite,Prix) : ")
     nom, qnt, prix_unit = prd.split(",")
     qnt = int(qnt)
     prix_unit = float(prix_unit)
@@ -18,7 +18,7 @@ def sup_prd():
     print("Le produit n'existe pas !!!")
 
 def mdf_qnt():
-    nom = input("Nom du Produit à modifier : ")
+    nom = input("Nom de produit à modifier : ")
     for p in stock:
         if p[0] == nom:
             qnt = int(input("Nouvelle Quantité : "))
@@ -29,8 +29,8 @@ def mdf_qnt():
 
 def aff_stock():
     if not stock:
-        print("Le stock est vide.")
-        return
-    print("Stock actuel :")
-    for p in stock:
-        print(f"- {p[0]} : quantité={p[1]}, prix={p[2]}")
+        print("Le stock est vide.")    
+    else :
+        print("Stock actuel :")
+        for p in stock:
+            print(f"- {p[0]} : quantité={p[1]}, prix={p[2]}")
