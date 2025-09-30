@@ -7,6 +7,7 @@ def ajt_prd():
     prix_unit = float(prix_unit)
     stock.append([nom, qnt, prix_unit])
     print(f"{nom} ajouté au stock.")
+    return stock
 
 def sup_prd():
     nom = input("Entrer le nom de produit à supprimer : ")
