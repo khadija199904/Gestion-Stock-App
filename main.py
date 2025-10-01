@@ -1,5 +1,6 @@
 from stock import ajt_prd, sup_prd, mdf_qnt,aff_stock, stock
 from stats import stats
+from visualize import visulize
 
 
 while True :
@@ -17,3 +18,4 @@ while True :
 sup_prd()
 mdf_qnt()
 stats(stock)
+visualize(stock)
