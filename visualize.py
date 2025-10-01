@@ -9,8 +9,9 @@ def visualize(stock) :
      Unit_Price = np.array([item[2] for item in stock])
      
      # Valeur par produit
-     valeurs = prix * quantite
-     
+     valeurs = Unit_Price * Qnt
+     #Graphique en barres : quantité par produit.
+
      plt.figure(figsize=(10, 6))
      plt.bar(product,Qnt,color='skyblue')
      plt.xlabel('Quantité')
