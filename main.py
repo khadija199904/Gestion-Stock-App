@@ -1,9 +1,9 @@
 from stock import ajt_prd, sup_prd, mdf_qnt,aff_stock, stock
 from stats import stats
-from visualize import visulize
+from visualize import visualize
 
 
-while True :
+while True :gir
     choix = input(" Voulez-vous ajouter un produit ? (o/n)")
     if choix == "o":
         ajt_prd()
