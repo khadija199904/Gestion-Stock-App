@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt 
 import numpy as np
-def visulize(stock) :
+def visualize(stock) :
      if not stock:
         print("⚠️ Le stock est vide.")
         return
