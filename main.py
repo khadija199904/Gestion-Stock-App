@@ -3,7 +3,7 @@ from stats import stats
 from visualize import visualize
 
 
-while True :gir
+while True :
     choix = input(" Voulez-vous ajouter un produit ? (o/n)")
     if choix == "o":
         ajt_prd()
