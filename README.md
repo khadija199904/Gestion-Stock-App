@@ -6,12 +6,12 @@ Ce projet est organisé en plusieurs modules pour assurer une structure claire, 
 
 ##  Structure du application 
 Stock-Manager/
-│
-├── main.py              # Point d’entrée du programme (menu principal)
-├── stock.py             # Fonctions de gestion du stock (ajout, suppression, mise à jour…)
-├── stats.py             # Fonctions de calculs statistiques avec NumPy
-├── visualize.py         # Fonctions de visualisation avec Matplotlib
-├── menu.py              # Menu interactif en console
+
+- main.py              # Point d’entrée du programme (menu principal)
+- stock.py             # Fonctions de gestion du stock (ajout, suppression, mise à jour…)
+- stats.py             # Fonctions de calculs statistiques avec NumPy
+- visualize.py         # Fonctions de visualisation avec Matplotlib
+- menu.py              # Menu interactif en console
 
 ##  Fonctionnalités principales
 
