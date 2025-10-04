@@ -1,6 +1,6 @@
 # 🏪 Gestion de stock avec statistiques et visualisation
 ## Description
-Stock Manager est une application Python en ligne de commande permettant de gérer un stock de produits, d’effectuer des analyses statistiques et de visualiser les données à l’aide de NumPy et Matplotlib.
+Gestion de stock est une application Python en ligne de commande permettant de gérer un stock de produits, d’effectuer des analyses statistiques et de visualiser les données à l’aide de NumPy et Matplotlib.
 
 Ce projet est organisé en plusieurs modules pour assurer une structure claire, modulaire et facile à maintenir.
 
