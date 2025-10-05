@@ -21,7 +21,7 @@ choice = st.sidebar.selectbox("Menu", menu_options)
 if choice == "Ajouter un produit":
     prd_input = st.text_input("Entrez le produit (Nom,Quantité,Prix)")
     if st.button("Ajouter"):
-        ajt_prd(prd_input)
+        ajt_prd()
         aff_stock()
 
 # ===== Supprimer un produit =====
@@ -30,7 +30,7 @@ elif choice == "Supprimer un produit":
         noms = [p[0] for p in stock]
         sel = st.selectbox("Sélectionnez un produit à supprimer", noms)
         if st.button("Supprimer"):
-            sup_prd(sel)
+            sup_prd()
             aff_stock()
     else:
         st.info("Le stock est vide.")
@@ -42,7 +42,7 @@ elif choice == "Modifier la quantité d’un produit":
         sel = st.selectbox("Sélectionnez un produit à modifier", noms)
         nouvelle_qte = st.number_input("Nouvelle quantité", min_value=0, step=1)
         if st.button("Modifier"):
-            mdf_qnt(sel, nouvelle_qte)
+            mdf_qnt()
             aff_stock()
     else:
         st.info("Le stock est vide.")
