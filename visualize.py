@@ -14,8 +14,8 @@ def visualize_bar() :
 
      plt.figure(figsize=(10, 6))
      plt.bar(product,Qnt,color='skyblue')
-     plt.xlabel('Quantité')
-     plt.ylabel('Produit')
+     plt.ylabel('Quantité')
+     plt.xlabel('Produit')
      plt.title('Quantité par produit')
      plt.show()
 
