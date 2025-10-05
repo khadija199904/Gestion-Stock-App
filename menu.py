@@ -31,16 +31,16 @@ def menu(stock):
         elif choix == "4":
             aff_stock()
         elif choix == "5":
-            stats(stock)
+            stats()
         elif choix == "6":
             print("\n=== Type de graphique ===")
             print("a. Bar chart")
             print("b. Pie chart")
             sous_choix = input("👉 Entrez votre choix (a/b) : ").lower()
             if sous_choix == "a":
-                visualize_bar(stock)
+                visualize_bar()
             elif sous_choix == "b":
-                visualize_pie(stock)
+                visualize_pie()
             else:
                 print(" Choix invalide pour le graphique.")
         elif choix == "7":
