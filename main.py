@@ -1,21 +1,9 @@
-from stock import ajt_prd, sup_prd, mdf_qnt,aff_stock, stock
-from stats import stats
-from visualize import visualize
+from menu import menu
 
+def main():
+    """Point d'entrée du programme."""
+    stock = []
+    menu(stock)
 
-while True :
-    choix = input(" Voulez-vous ajouter un produit ? (o/n)")
-    if choix == "o":
-        ajt_prd()
-        aff_stock()
-    elif choix =="n":
-        print("Fin !!!")
-        break
-    else :
-        print("Réponse invalide !!!")
-
-
-sup_prd()
-mdf_qnt()
-stats(stock)
-visualize(stock)
+if __name__ == "__main__":
+    main()

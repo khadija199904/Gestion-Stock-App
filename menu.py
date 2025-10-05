@@ -1,7 +1,7 @@
 
-from stock import ajt_prd, aff_stock
+from stock import ajt_prd, sup_prd, mdf_qnt,aff_stock, stock
 from stats import stats
-from visualize import visualize_bar
+from visualize import visualize
 
 def menu(stock):
     """Affiche le menu principal et gère les choix de l'utilisateur."""
@@ -16,7 +16,12 @@ def menu(stock):
         choix = input("👉 Entrez votre choix : ")
 
         if choix == "1":
-            ajt_prd(stock)
+            while True:
+                ajt_prd(stock)
+                aff_stock(stock)
+                continuer = input("Voulez-vous ajouter un autre produit ? (o/n) : ").lower()
+                if continuer != "o":
+                    break
         elif choix == "2":
             aff_stock(stock)
         elif choix == "3":
