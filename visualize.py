@@ -26,6 +26,8 @@ def visualize_pie(stock) :
      if not stock:
         print("⚠️ Le stock est vide.")
         return
+     Qnt = np.array([item[1] for item in stock])
+     Unit_Price = np.array([item[2] for item in stock])
      # Valeur par produit
      valeurs = Unit_Price * Qnt
 

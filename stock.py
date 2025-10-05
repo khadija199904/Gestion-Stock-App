@@ -3,10 +3,9 @@ stock = []
 def ajt_prd():
     prd = input("Entrer votre produit sous frome (Produit,Quantite,Prix) : ")
     nom, qnt, prix_unit = prd.split(",")
-    qnt = int(qnt)
-    prix_unit = float(prix_unit)
-    stock.append([nom, qnt, prix_unit])
-    print(f"{nom} ajouté au stock.")
+    
+    stock.append([nom.strip(), int(qnt), float(prix_unit)])
+    print(f"{nom.strip()} ajouté au stock.")
     return stock
 
 def sup_prd():
@@ -35,3 +34,4 @@ def aff_stock():
         print("Stock actuel :")
         for p in stock:
             print(f"- {p[0]} : quantité={p[1]}, prix={p[2]}")
+            
