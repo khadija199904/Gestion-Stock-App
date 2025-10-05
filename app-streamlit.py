@@ -3,6 +3,8 @@ from stock import ajt_prd, sup_prd, mdf_qnt, aff_stock, stock
 from stats import stats
 from visualize import visualize_bar, visualize_pie
 
+if "stock" not in st.session_state:
+    st.session_state.stock = []
 st.title("📦 Gestion du Stock avec Streamlit")
 
 # Menu Streamlit
@@ -16,6 +18,9 @@ menu_options = [
 ]
 
 choice = st.sidebar.selectbox("Menu", menu_options)
+
+# Utiliser le stock de la session
+stock = st.session_state.stock
 
 # ===== Ajouter un produit =====
 if choice == "Ajouter un produit":
