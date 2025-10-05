@@ -36,7 +36,7 @@ Gestion de stock
 
 1. Cloner le dépôt :
 ```bash
-git clone https://github.com/votre-utilisateur/Gestion-stock-app.git
+git clone https://github.com/khadija199904/Gestion-stock-app.git
 cd Gestion-stock-app/src
 ```
 2. Installer les dépendances :
