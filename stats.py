@@ -4,12 +4,12 @@ def stats (stock) :
     if not stock:  # Vérifier si le stock est vide
         print("⚠️ Le stock est vide.")
         return
-    product = np.array([item[0] for item in stock])
-    Qnt = np.array([item[1] for item in stock])
-    Unit_Price = np.array([item[2] for item in stock])
+    product = np.array([item["nom"] for item in stock])
+    Qnt = np.array([item["qnt"] for item in stock])
+    Unit_Price = np.array([item["prix_unit"] for item in stock])
     
     # Valeur totale du stock (somme(prix * quantité))
-    Total_stock = sum(Qnt*Unit_Price)
+    Total_stock = sum(Qnt * Unit_Price)
     # Prix moyen des produits
     AVR_price = np.mean(Unit_Price)
     
