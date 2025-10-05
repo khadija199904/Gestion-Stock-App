@@ -1,13 +1,10 @@
 import matplotlib.pyplot as plt 
 import numpy as np
+from stock import  stock
 
 
-     
-
-     
-
-
-def visualize_bar(stock) :
+def visualize_bar() :
+     global stock
      if not stock:
         print("⚠️ Le stock est vide.")
         return
@@ -22,7 +19,8 @@ def visualize_bar(stock) :
      plt.title('Quantité par produit')
      plt.show()
 
-def visualize_pie(stock) :
+def visualize_pie() :
+     global stock
      if not stock:
         print("⚠️ Le stock est vide.")
         return

@@ -1,6 +1,8 @@
 import numpy as np
+from stock import  stock
 
-def stats (stock) :
+def stats() :
+    global stock
     if not stock:  # Vérifier si le stock est vide
         print("⚠️ Le stock est vide.")
         return
