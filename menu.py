@@ -17,17 +17,17 @@ def menu(stock):
 
         if choix == "1":
             while True:
-                ajt_prd(stock)
-                aff_stock(stock)
+                ajt_prd()
+                aff_stock()
                 continuer = input("Voulez-vous ajouter un autre produit ? (o/n) : ").lower()
                 if continuer != "o":
                     break
         elif choix == "2":
-            aff_stock(stock)
+            aff_stock()
         elif choix == "3":
             stats(stock)
         elif choix == "4":
-            visualize_bar(stock)
+            visualize(stock)
         elif choix == "5":
             print(" Fin du programme.")
             break
